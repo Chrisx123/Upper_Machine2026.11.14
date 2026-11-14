@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "E:\\Dong_UpperMachine\\Display_UpperMachine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D858F14E-7C2F-4148-8235-20EB8329944A}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D858F14E-7C2F-4148-8235-20EB8329944A}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D858F14E-7C2F-4148-8235-20EB8329944A}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D858F14E-7C2F-4148-8235-20EB8329944A}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\storage\\idatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\storage\\idatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\storage\\mysqlstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\storage\\mysqlstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\storage\\sqlitestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\storage\\sqlitestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\storage\\storefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\storage\\storefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\services\\modbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\services\\modbusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\themes\\style.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\themes\\style.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\themes\\colour.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\themes\\colour.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|e:\\dong_uppermachine\\display_uppermachine\\display_uppermachine\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D6933AB-4811-D8B0-1FAD-0C0EC591710B}|Display_UpperMachine\\Display_UpperMachine.csproj|solutionrelative:display_uppermachine\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +83,160 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\AppConfig.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\AppConfig.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\AppConfig.cs",
+              "RelativeToolTip": "Display_UpperMachine\\AppConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T08:42:45.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StoreFactory.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\StoreFactory.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Storage\\StoreFactory.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\StoreFactory.cs",
+              "RelativeToolTip": "Display_UpperMachine\\Storage\\StoreFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T08:40:04.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SqliteStore.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\SqliteStore.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Storage\\SqliteStore.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\SqliteStore.cs",
+              "RelativeToolTip": "Display_UpperMachine\\Storage\\SqliteStore.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwBkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T08:40:02.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MySqlStore.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\MySqlStore.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Storage\\MySqlStore.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\MySqlStore.cs",
+              "RelativeToolTip": "Display_UpperMachine\\Storage\\MySqlStore.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwC4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T08:40:01.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDataStore.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\IDataStore.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Storage\\IDataStore.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Storage\\IDataStore.cs",
+              "RelativeToolTip": "Display_UpperMachine\\Storage\\IDataStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T08:40:00.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModbusService.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Services\\ModbusService.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Services\\ModbusService.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Services\\ModbusService.cs",
+              "RelativeToolTip": "Display_UpperMachine\\Services\\ModbusService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T07:03:02.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Display_UpperMachine\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAQwA4BAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T05:40:11.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Display_UpperMachine\\MainWindow.xaml",
               "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\MainWindow.xaml",
               "RelativeToolTip": "Display_UpperMachine\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-14T05:40:11.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-14T05:40:11.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Display_UpperMachine\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Display_UpperMachine\\MainWindow.xaml.cs",
+              "DocumentIndex": 8,
+              "Title": "Style.xaml",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Themes\\Style.xaml",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Themes\\Style.xaml",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Themes\\Style.xaml",
+              "RelativeToolTip": "Display_UpperMachine\\Themes\\Style.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-14T05:53:17.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\App.xaml",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\App.xaml",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\App.xaml",
+              "RelativeToolTip": "Display_UpperMachine\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-14T05:53:52.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\AssemblyInfo.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\AssemblyInfo.cs",
+              "RelativeToolTip": "Display_UpperMachine\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-14T05:40:11.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-14T06:13:47.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Colour.xaml",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Themes\\Colour.xaml",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\Themes\\Colour.xaml",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\Themes\\Colour.xaml",
+              "RelativeToolTip": "Display_UpperMachine\\Themes\\Colour.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-14T05:52:56.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Display_UpperMachine\\App.xaml.cs",
+              "ToolTip": "E:\\Dong_UpperMachine\\Display_UpperMachine\\Display_UpperMachine\\App.xaml.cs",
+              "RelativeToolTip": "Display_UpperMachine\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T05:49:32.658Z"
             },
             {
               "$type": "Bookmark",

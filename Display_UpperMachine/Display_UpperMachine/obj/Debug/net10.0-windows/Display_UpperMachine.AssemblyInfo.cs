@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Display_UpperMachine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9396320cd84378ece67298b2ce289bfad1dca79")]
 [assembly: System.Reflection.AssemblyProductAttribute("Display_UpperMachine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Display_UpperMachine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

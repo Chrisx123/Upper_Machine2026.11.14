@@ -5,8 +5,182 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Display_UpperMachine"
         mc:Ignorable="d"
+        WindowStyle="None"
+        WindowState="Maximized"
+        Background="{StaticResource BgBrush}"
+        Foreground="{StaticResource TextBrush}"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
 
+        <!-- ① 标题栏 -->
+        <Grid Grid.Row="0" Background="{StaticResource PanelBrush}">
+            <TextBlock Text="PLC 数据采集 Demo" HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Margin="12,0,0,0"
+                       FontSize="30"/>
+            <Button x:Name="btnClose" Content="X"
+                    Style="{StaticResource CloseButtonStyle}"
+                    Background="Transparent"
+                    HorizontalAlignment="Right" VerticalAlignment="Center"
+                    Width="32" Click="btnClose_Click" FontSize="30"/>
+        </Grid>
+
+        <!-- ② 连接配置 -->
+        <Border Grid.Row="1" Background="{StaticResource PanelBrush}" Padding="12,8">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="模式" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cmbMode" Width="80" Margin="4,0,0,0" SelectionChanged="cmbMode_SelectionChanged">
+                    <ComboBoxItem Content="TCP" />
+                    <ComboBoxItem Content="RTU"/>
+                </ComboBox>
+                <!-- TCP -->
+                <StackPanel x:Name="pnlTcp" Orientation="Horizontal" Margin="12,0,0,0">
+                    <TextBlock Text="IP" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtIp" Width="110" Text="127.0.0.1" Margin="4,0,8,0"/>
+                    <TextBlock Text="端口" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtPort" Width="55" Text="502" Margin="4,0,8,0"/>
+                    <TextBlock Text="从站" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtUnitedId" Width="45" Text="1" Margin="4,0,0,0"/>
+                </StackPanel>
+                <!-- RTU -->
+                <StackPanel x:Name="pnlRtu" Orientation="Horizontal" Margin="12,0,0,0"
+                            Visibility="Collapsed">
+                    <TextBlock Text="串口" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cmbPort" Width="90" Margin="4,0,8,0"/>
+                    <TextBlock Text="波特率" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cmbBaud" Width="80" Margin="4,0,8,0">
+                        <ComboBoxItem Content="9600" IsSelected="True"/>
+                        <ComboBoxItem Content="19200"/>
+                        <ComboBoxItem Content="38400"/>
+                    </ComboBox>
+                    <TextBlock Text="校验" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="cmbParity" Width="70" Margin="4,0,0,0">
+                        <ComboBoxItem Content="None" IsSelected="True"/>
+                        <ComboBoxItem Content="Even"/>
+                        <ComboBoxItem Content="Odd"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <Button x:Name="btnTest" Content="测试连接" Margin="16,0,0,0"
+                        Click="btnTest_Click"/>
+            </StackPanel>
+        </Border>
+
+        <!-- ③ 数据表格：前 10 只读 / 后 10 可写，值均为浮点 -->
+        <DataGrid Grid.Row="2" x:Name="dgData" Margin="8"
+                  AutoGenerateColumns="False" CanUserAddRows="False"
+                  HeadersVisibility="Column" GridLinesVisibility="Horizontal"
+                  Background="{StaticResource PanelBrush}"
+                  Foreground="{StaticResource TextBrush}"
+                  RowBackground="{StaticResource PanelBrush}"
+                  AlternatingRowBackground="{StaticResource ButtonBgBrush}"
+                  BorderBrush="{StaticResource BorderBrush}"
+                  RowHeight="30" FontSize="14">
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="{StaticResource ButtonBgBrush}"/>
+                    <Setter Property="Foreground" Value="{StaticResource TextBrush}"/>
+                    <Setter Property="Padding" Value="8,5"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    <Setter Property="FontSize" Value="14"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Foreground" Value="{StaticResource TextBrush}"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="6,0"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="名称" Binding="{Binding Name}" Width="180" IsReadOnly="True"/>
+                <DataGridTextColumn Header="寄存器地址" Binding="{Binding Address}" Width="110" IsReadOnly="True"/>
+                <DataGridTextColumn Header="原始寄存器" Binding="{Binding RawHex}" Width="140" IsReadOnly="True"/>
+                <DataGridTemplateColumn Header="值" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Value, UpdateSourceTrigger=LostFocus}"
+                                     IsReadOnly="{Binding IsReadOnly}"
+                                     VerticalContentAlignment="Center"
+                                     Background="Transparent"
+                                     Foreground="{StaticResource TextBrush}"
+                                     CaretBrush="{StaticResource TextBrush}"
+                                     BorderThickness="0"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="操作" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="写入" Width="64" Margin="2"
+                                    Visibility="{Binding WriteButtonVisibility}"
+                                    Click="btnWriteRow_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- ④ 操作区 -->
+        <Border Grid.Row="3" Background="{StaticResource PanelBrush}" Padding="12,8">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="状态：" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtStatus" Text="未连接" VerticalAlignment="Center"
+                           Foreground="{StaticResource BadBrush}" FontWeight="Bold"/>
+                <TextBlock Text="浮点字节序" VerticalAlignment="Center" Margin="24,0,0,0"/>
+                <ComboBox x:Name="cmbFloatOrder" Width="90" Margin="4,0,0,0">
+                    <ComboBoxItem Content="ABCD" IsSelected="True"/>
+                    <ComboBoxItem Content="CDAB"/>
+                    <ComboBoxItem Content="BADC"/>
+                    <ComboBoxItem Content="DCBA"/>
+                </ComboBox>
+                <Button x:Name="btnWriteAll" Content="写入全部(后10个)" Margin="24,0,0,0"
+                        Width="160" Click="btnWriteAll_Click"/>
+            </StackPanel>
+        </Border>
+
+        <!-- ⑤ 存储 -->
+        <Border Grid.Row="4" Background="{StaticResource PanelBrush}" Padding="12,8">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="存储：" VerticalAlignment="Center"/>
+                <TextBlock x:Name="txtDbProvider" Text="SQLite" VerticalAlignment="Center"
+                           Foreground="{StaticResource AccentBrush}" FontWeight="Bold" Margin="4,0,0,0"/>
+                <Button x:Name="btnDbInit" Content="初始化/建表" Margin="16,0,0,0" Width="110"
+                        Click="btnDbInit_Click"/>
+                <CheckBox x:Name="chkAutoSave" Content="自动保存（值变化时）" Margin="16,0,0,0"
+                          VerticalAlignment="Center" Foreground="{StaticResource TextBrush}"
+                          Checked="chkAutoSave_Checked" Unchecked="chkAutoSave_Unchecked"/>
+                <TextBlock x:Name="txtDbStatus" Text="未初始化" VerticalAlignment="Center"
+                           Margin="16,0,0,0" Foreground="{StaticResource SubTextBrush}"/>
+            </StackPanel>
+        </Border>
+
+        <!-- ⑥ 日志 -->
+        <Border Grid.Row="5" Background="{StaticResource PanelBrush}" Padding="12,8">
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top" Text="日志" FontWeight="Bold"
+                           Foreground="{StaticResource SubTextBrush}" Margin="0,0,0,4"/>
+                <ListBox x:Name="lstLog" Background="Transparent" BorderThickness="0"
+                         Foreground="{StaticResource TextBrush}"
+                         ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </DockPanel>
+        </Border>
     </Grid>
 </Window>
